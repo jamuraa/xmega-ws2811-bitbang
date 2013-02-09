@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>6.0</ProjectVersion>
+    <ProjectGuid>{5a256a79-d06d-4629-b05f-ad0cb9701569}</ProjectGuid>
+    <Name>$(MSBuildProjectName)</Name>
+    <AssemblyName>$(MSBuildProjectName)</AssemblyName>
+    <RootNamespace>$(MSBuildProjectName)</RootNamespace>
+    <AsfVersion>3.5.1</AsfVersion>
+    <AsfFrameworkConfig>
+      <framework-data>
+  <options>
+    <option id="common.boards" value="Add" config="" content-id="Atmel.ASF" />
+    <option id="common.services.basic.clock" value="Add" config="" content-id="Atmel.ASF" />
+    <option id="common.services.basic.gpio" value="Add" config="" content-id="Atmel.ASF" />
+    <option id="xmega.drivers.ioport" value="Add" config="" content-id="Atmel.ASF" />
+    <option id="config.common.services.qtouch.generic.avr8.xmega_a3bu_xplained.method" value="Add" config="qtouch_method" content-id="Atmel.ASF" />
+  </options>
+  <configurations>
+    <configuration key="config.spi_master_type" value="usart_and_standard_spi" default="usart_and_standard_spi" content-id="Atmel.ASF" />
+    <configuration key="config.gfx_mono.display" value="c12832_a1z" default="c12832_a1z" content-id="Atmel.ASF" />
+  </configurations>
+  <files>
+    <file path="src/config/conf_board.h" framework="" version="3.5.1" source="common/applications/user_application/atxmega256a3bu_xmega_a3bu_xplained/conf_board.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/main.c" framework="" version="3.5.1" source="common/applications/user_application/main.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/common/boards/board.h" framework="" version="3.5.1" source="common/boards/board.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/common/services/gpio/gpio.h" framework="" version="3.5.1" source="common/services/gpio/gpio.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/common/services/gpio/xmega_gpio/xmega_gpio.h" framework="" version="3.5.1" source="common/services/gpio/xmega_gpio/xmega_gpio.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/common/services/ioport/ioport.h" framework="" version="3.5.1" source="common/services/ioport/ioport.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/common/services/ioport/xmega/ioport.h" framework="" version="3.5.1" source="common/services/ioport/xmega/ioport.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/common/services/ioport/xmega/ioport_compat.c" framework="" version="3.5.1" source="common/services/ioport/xmega/ioport_compat.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/common/services/ioport/xmega/ioport_compat.h" framework="" version="3.5.1" source="common/services/ioport/xmega/ioport_compat.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/common/utils/interrupt.h" framework="" version="3.5.1" source="common/utils/interrupt.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/common/utils/interrupt/interrupt_avr8.h" framework="" version="3.5.1" source="common/utils/interrupt/interrupt_avr8.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/common/utils/make/Makefile.avr.in" framework="" version="3.5.1" source="common/utils/make/Makefile.avr.in" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/common/utils/parts.h" framework="" version="3.5.1" source="common/utils/parts.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/xmega/boards/xmega_a3bu_xplained/init.c" framework="" version="3.5.1" source="xmega/boards/xmega_a3bu_xplained/init.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/xmega/boards/xmega_a3bu_xplained/led.h" framework="" version="3.5.1" source="xmega/boards/xmega_a3bu_xplained/led.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/xmega/boards/xmega_a3bu_xplained/xmega_a3bu_xplained.h" framework="" version="3.5.1" source="xmega/boards/xmega_a3bu_xplained/xmega_a3bu_xplained.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/xmega/utils/assembler.h" framework="" version="3.5.1" source="xmega/utils/assembler.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/xmega/utils/assembler/gas.h" framework="" version="3.5.1" source="xmega/utils/assembler/gas.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/xmega/utils/bit_handling/clz_ctz.h" framework="" version="3.5.1" source="xmega/utils/bit_handling/clz_ctz.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/xmega/utils/compiler.h" framework="" version="3.5.1" source="xmega/utils/compiler.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/xmega/utils/preprocessor/mrepeat.h" framework="" version="3.5.1" source="xmega/utils/preprocessor/mrepeat.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/xmega/utils/preprocessor/preprocessor.h" framework="" version="3.5.1" source="xmega/utils/preprocessor/preprocessor.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/xmega/utils/preprocessor/stringz.h" framework="" version="3.5.1" source="xmega/utils/preprocessor/stringz.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/xmega/utils/preprocessor/tpaste.h" framework="" version="3.5.1" source="xmega/utils/preprocessor/tpaste.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/xmega/utils/progmem.h" framework="" version="3.5.1" source="xmega/utils/progmem.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/xmega/utils/status_codes.h" framework="" version="3.5.1" source="xmega/utils/status_codes.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/xmega/drivers/cpu/ccp.s" framework="" version="" source="xmega\drivers\cpu\ccp.s" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/xmega/drivers/cpu/xmega_reset_cause.h" framework="" version="" source="xmega\drivers\cpu\xmega_reset_cause.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/xmega/drivers/cpu/ccp.h" framework="" version="" source="xmega\drivers\cpu\ccp.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/xmega/drivers/nvm/nvm.c" framework="" version="" source="xmega\drivers\nvm\nvm.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/xmega/drivers/nvm/nvm_asm.s" framework="" version="" source="xmega\drivers\nvm\nvm_asm.s" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/xmega/drivers/nvm/nvm.h" framework="" version="" source="xmega\drivers\nvm\nvm.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/common/services/clock/xmega/sysclk.c" framework="" version="" source="common\services\clock\xmega\sysclk.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/common/services/clock/pll.h" framework="" version="" source="common\services\clock\pll.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/common/services/clock/genclk.h" framework="" version="" source="common\services\clock\genclk.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/common/services/clock/osc.h" framework="" version="" source="common\services\clock\osc.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/common/services/clock/xmega/pll.h" framework="" version="" source="common\services\clock\xmega\pll.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/common/services/clock/xmega/sysclk.h" framework="" version="" source="common\services\clock\xmega\sysclk.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/common/services/clock/xmega/osc.h" framework="" version="" source="common\services\clock\xmega\osc.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/common/services/clock/sysclk.h" framework="" version="" source="common\services\clock\sysclk.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/config/conf_clock.h" framework="" version="" source="common\services\clock\xmega\module_config\conf_clock.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/thirdparty/qtouch/generic/avr8/qtouch/common/qt_asm_xmega.S" framework="" version="" source="thirdparty\qtouch\generic\avr8\qtouch\common\qt_asm_xmega.S" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/thirdparty/qtouch/generic/avr8/qtouch/lib/gcc/libavrxmega6g1-8qt-k-2rs.a" framework="" version="" source="thirdparty\qtouch\generic\avr8\qtouch\lib\gcc\libavrxmega6g1-8qt-k-2rs.a" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/thirdparty/qtouch/generic/avr8/qtouch/lib/gcc/libavrxmega6g1-16qt-k-4rs.a" framework="" version="" source="thirdparty\qtouch\generic\avr8\qtouch\lib\gcc\libavrxmega6g1-16qt-k-4rs.a" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/thirdparty/qtouch/generic/avr8/qtouch/lib/gcc/libavrxmega6g1-8qt-k-0rs.a" framework="" version="" source="thirdparty\qtouch\generic\avr8\qtouch\lib\gcc\libavrxmega6g1-8qt-k-0rs.a" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/thirdparty/qtouch/generic/avr8/qtouch/lib/gcc/libavrxmega6g1-4qt-k-1rs.a" framework="" version="" source="thirdparty\qtouch\generic\avr8\qtouch\lib\gcc\libavrxmega6g1-4qt-k-1rs.a" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/thirdparty/qtouch/generic/avr8/qtouch/lib/gcc/libavrxmega6g1-16qt-k-0rs.a" framework="" version="" source="thirdparty\qtouch\generic\avr8\qtouch\lib\gcc\libavrxmega6g1-16qt-k-0rs.a" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/thirdparty/qtouch/generic/avr8/qtouch/lib/gcc/libavrxmega6g1-12qt-k-0rs.a" framework="" version="" source="thirdparty\qtouch\generic\avr8\qtouch\lib\gcc\libavrxmega6g1-12qt-k-0rs.a" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/thirdparty/qtouch/generic/avr8/qtouch/lib/gcc/libavrxmega6g1-12qt-k-3rs.a" framework="" version="" source="thirdparty\qtouch\generic\avr8\qtouch\lib\gcc\libavrxmega6g1-12qt-k-3rs.a" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/thirdparty/qtouch/generic/avr8/qtouch/lib/gcc/libavrxmega6g1-4qt-k-0rs.a" framework="" version="" source="thirdparty\qtouch\generic\avr8\qtouch\lib\gcc\libavrxmega6g1-4qt-k-0rs.a" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/thirdparty/qtouch/generic/include/touch_api.h" framework="" version="" source="thirdparty\qtouch\generic\include\touch_api.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/thirdparty/qtouch/generic/avr8/qtouch/common/touch_qt_config.h" framework="" version="" source="thirdparty\qtouch\generic\avr8\qtouch\common\touch_qt_config.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/config/touch_qt_config.h" framework="" version="" source="thirdparty\qtouch\generic\avr8\qtouch\common\touch_qt_config.h" changed="False" content-id="Atmel.ASF" />
+  </files>
+  <documentation help="http://asf.atmel.com/docs/3.5.1/common.applications.user_application.xmega_a3bu_xplained/html/index.html" />
+</framework-data>
+    </AsfFrameworkConfig>
+    <avrdevice>ATxmega256A3BU</avrdevice>
+    <avrdeviceseries>xmegaau</avrdeviceseries>
+    <Language>C</Language>
+    <ToolchainName>com.Atmel.AVRGCC8</ToolchainName>
+    <AvrGccProjectExtensions />
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputType>Executable</OutputType>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <OverrideVtorValue />
+    <eraseonlaunchrule>0</eraseonlaunchrule>
+    <avrtoolinterface>JTAG</avrtoolinterface>
+    <avrtool>com.atmel.avrdbg.tool.jtagicemk3</avrtool>
+    <com_atmel_avrdbg_tool_jtagicemk3>
+      <ToolType>com.atmel.avrdbg.tool.jtagicemk3</ToolType>
+      <ToolName>JTAGICE3</ToolName>
+      <ToolNumber>J30200004506</ToolNumber>
+      <KeepTimersRunning>true</KeepTimersRunning>
+      <OverrideVtor>false</OverrideVtor>
+      <OverrideVtorValue>
+      </OverrideVtorValue>
+      <Channel>
+        <host>127.0.0.1</host>
+        <port>10006</port>
+        <ssl>False</ssl>
+      </Channel>
+      <ToolOptions>
+        <InterfaceName>JTAG</InterfaceName>
+        <InterfaceProperties>
+          <JtagDbgClock>250000</JtagDbgClock>
+          <JtagProgClock>1000000</JtagProgClock>
+          <IspClock>150000</IspClock>
+          <JtagInChain>false</JtagInChain>
+          <JtagEnableExtResetOnStartSession>true</JtagEnableExtResetOnStartSession>
+          <JtagDevicesBefore>0</JtagDevicesBefore>
+          <JtagDevicesAfter>0</JtagDevicesAfter>
+          <JtagInstrBitsBefore>0</JtagInstrBitsBefore>
+          <JtagInstrBitsAfter>0</JtagInstrBitsAfter>
+          <PdiClock>250000</PdiClock>
+        </InterfaceProperties>
+      </ToolOptions>
+    </com_atmel_avrdbg_tool_jtagicemk3>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <AvrGcc>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>BOARD=XMEGA_A3BU_XPLAINED</Value>
+      <Value>CONFIG_NVM_IGNORE_XMEGA_A3_D3_REVB_ERRATA</Value>
+      <Value>IOPORT_XMEGA_COMPAT</Value>
+      <Value>SNSK1=F</Value>
+      <Value>_SNS1_SNSK1_SAME_PORT_</Value>
+      <Value>QT_NUM_CHANNELS=4</Value>
+      <Value>_QTOUCH_</Value>
+      <Value>QT_DELAY_CYCLES=1</Value>
+      <Value>QTOUCH_STUDIO_MASKS=1</Value>
+      <Value>NUMBER_OF_PORTS=1</Value>
+      <Value>SNS1=F</Value>
+    </ListValues>
+  </avrgcc.compiler.symbols.DefSymbols>
+  <avrgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../src</Value>
+      <Value>../src/asf/common/applications/user_application/atxmega256a3bu_xmega_a3bu_xplained</Value>
+      <Value>../src/asf/common/boards</Value>
+      <Value>../src/asf/common/services/gpio</Value>
+      <Value>../src/asf/common/services/ioport</Value>
+      <Value>../src/asf/common/utils</Value>
+      <Value>../src/asf/xmega/boards</Value>
+      <Value>../src/asf/xmega/boards/xmega_a3bu_xplained</Value>
+      <Value>../src/asf/xmega/utils</Value>
+      <Value>../src/asf/xmega/utils/preprocessor</Value>
+      <Value>../src/config</Value>
+      <Value>../src/asf/xmega/drivers/cpu</Value>
+      <Value>../src/asf/xmega/drivers/nvm</Value>
+      <Value>../src/asf/common/services/clock</Value>
+      <Value>../src/asf/thirdparty/qtouch/generic/avr8/qtouch/common</Value>
+      <Value>../src/asf/thirdparty/qtouch/generic/include</Value>
+    </ListValues>
+  </avrgcc.compiler.directories.IncludePaths>
+  <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.optimization.OtherFlags>-fdata-sections</avrgcc.compiler.optimization.OtherFlags>
+  <avrgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</avrgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+  <avrgcc.compiler.miscellaneous.OtherFlags>-Werror-implicit-function-declaration -Wmissing-prototypes -Wpointer-arith -Wstrict-prototypes -mrelax -std=gnu99</avrgcc.compiler.miscellaneous.OtherFlags>
+  <avrgcc.linker.general.DoNotUseStandardStartFiles />
+  <avrgcc.linker.general.DoNotUseDefaultLibraries />
+  <avrgcc.linker.general.NoStartupOrDefaultLibs />
+  <avrgcc.linker.libraries.Libraries>
+    <ListValues>
+      <Value>avrxmega6g1-4qt-k-0rs</Value>
+    </ListValues>
+  </avrgcc.linker.libraries.Libraries>
+  <avrgcc.linker.libraries.LibrarySearchPaths>
+    <ListValues>
+      <Value>../src/asf/thirdparty/qtouch/generic/avr8/qtouch/lib/gcc</Value>
+    </ListValues>
+  </avrgcc.linker.libraries.LibrarySearchPaths>
+  <avrgcc.linker.optimization.GarbageCollectUnusedSections>True</avrgcc.linker.optimization.GarbageCollectUnusedSections>
+  <avrgcc.linker.optimization.RelaxBranches>True</avrgcc.linker.optimization.RelaxBranches>
+  <avrgcc.linker.miscellaneous.LinkerFlags>-Wl,--relax -Wl,--section-start=.BOOT=0x40000</avrgcc.linker.miscellaneous.LinkerFlags>
+  <avrgcc.assembler.general.AssemblerFlags>-DBOARD=XMEGA_A3BU_XPLAINED -DCONFIG_NVM_IGNORE_XMEGA_A3_D3_REVB_ERRATA -DIOPORT_XMEGA_COMPAT -mrelax</avrgcc.assembler.general.AssemblerFlags>
+  <avrgcc.assembler.general.IncludePaths>
+    <ListValues>
+      <Value>../src</Value>
+      <Value>../src/asf/common/applications/user_application/atxmega256a3bu_xmega_a3bu_xplained</Value>
+      <Value>../src/asf/common/boards</Value>
+      <Value>../src/asf/common/services/gpio</Value>
+      <Value>../src/asf/common/services/ioport</Value>
+      <Value>../src/asf/common/utils</Value>
+      <Value>../src/asf/xmega/boards</Value>
+      <Value>../src/asf/xmega/boards/xmega_a3bu_xplained</Value>
+      <Value>../src/asf/xmega/utils</Value>
+      <Value>../src/asf/xmega/utils/preprocessor</Value>
+      <Value>../src/config</Value>
+      <Value>../src/asf/xmega/drivers/cpu</Value>
+      <Value>../src/asf/xmega/drivers/nvm</Value>
+      <Value>../src/asf/common/services/clock</Value>
+      <Value>../src/asf/thirdparty/qtouch/generic/avr8/qtouch/common</Value>
+      <Value>../src/asf/thirdparty/qtouch/generic/include</Value>
+    </ListValues>
+  </avrgcc.assembler.general.IncludePaths>
+</AvrGcc>
+    </ToolchainSettings>
+    <MemorySettings />
+    <GenerateHexFile>True</GenerateHexFile>
+    <GenerateMapFile>True</GenerateMapFile>
+    <GenerateListFile>True</GenerateListFile>
+    <GenerateEepFile>True</GenerateEepFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <AvrGcc>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>BOARD=XMEGA_A3BU_XPLAINED</Value>
+      <Value>CONFIG_NVM_IGNORE_XMEGA_A3_D3_REVB_ERRATA</Value>
+      <Value>IOPORT_XMEGA_COMPAT</Value>
+      <Value>SNSK1=F</Value>
+      <Value>_SNS1_SNSK1_SAME_PORT_</Value>
+      <Value>QT_NUM_CHANNELS=4</Value>
+      <Value>_QTOUCH_</Value>
+      <Value>QT_DELAY_CYCLES=1</Value>
+      <Value>QTOUCH_STUDIO_MASKS=1</Value>
+      <Value>NUMBER_OF_PORTS=1</Value>
+      <Value>SNS1=F</Value>
+    </ListValues>
+  </avrgcc.compiler.symbols.DefSymbols>
+  <avrgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../src</Value>
+      <Value>../src/asf/common/applications/user_application/atxmega256a3bu_xmega_a3bu_xplained</Value>
+      <Value>../src/asf/common/boards</Value>
+      <Value>../src/asf/common/services/gpio</Value>
+      <Value>../src/asf/common/services/ioport</Value>
+      <Value>../src/asf/common/utils</Value>
+      <Value>../src/asf/xmega/boards</Value>
+      <Value>../src/asf/xmega/boards/xmega_a3bu_xplained</Value>
+      <Value>../src/asf/xmega/utils</Value>
+      <Value>../src/asf/xmega/utils/preprocessor</Value>
+      <Value>../src/config</Value>
+      <Value>../src/asf/xmega/drivers/cpu</Value>
+      <Value>../src/asf/xmega/drivers/nvm</Value>
+      <Value>../src/asf/common/services/clock</Value>
+      <Value>../src/asf/thirdparty/qtouch/generic/avr8/qtouch/common</Value>
+      <Value>../src/asf/thirdparty/qtouch/generic/include</Value>
+    </ListValues>
+  </avrgcc.compiler.directories.IncludePaths>
+  <avrgcc.compiler.optimization.OtherFlags>-fdata-sections</avrgcc.compiler.optimization.OtherFlags>
+  <avrgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</avrgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <avrgcc.compiler.optimization.DebugLevel>Maximum (-g3)</avrgcc.compiler.optimization.DebugLevel>
+  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+  <avrgcc.compiler.miscellaneous.OtherFlags>-Werror-implicit-function-declaration -Wmissing-prototypes -Wpointer-arith -Wstrict-prototypes -mrelax -std=gnu99</avrgcc.compiler.miscellaneous.OtherFlags>
+  <avrgcc.linker.libraries.Libraries>
+    <ListValues>
+      <Value>avrxmega6g1-4qt-k-0rs</Value>
+    </ListValues>
+  </avrgcc.linker.libraries.Libraries>
+  <avrgcc.linker.libraries.LibrarySearchPaths>
+    <ListValues>
+      <Value>../src/asf/thirdparty/qtouch/generic/avr8/qtouch/lib/gcc</Value>
+    </ListValues>
+  </avrgcc.linker.libraries.LibrarySearchPaths>
+  <avrgcc.linker.optimization.GarbageCollectUnusedSections>True</avrgcc.linker.optimization.GarbageCollectUnusedSections>
+  <avrgcc.linker.optimization.RelaxBranches>True</avrgcc.linker.optimization.RelaxBranches>
+  <avrgcc.linker.miscellaneous.LinkerFlags>-Wl,--relax -Wl,--section-start=.BOOT=0x40000</avrgcc.linker.miscellaneous.LinkerFlags>
+  <avrgcc.assembler.general.AssemblerFlags>-DBOARD=XMEGA_A3BU_XPLAINED -DCONFIG_NVM_IGNORE_XMEGA_A3_D3_REVB_ERRATA -DIOPORT_XMEGA_COMPAT -mrelax</avrgcc.assembler.general.AssemblerFlags>
+  <avrgcc.assembler.general.IncludePaths>
+    <ListValues>
+      <Value>../src</Value>
+      <Value>../src/asf/common/applications/user_application/atxmega256a3bu_xmega_a3bu_xplained</Value>
+      <Value>../src/asf/common/boards</Value>
+      <Value>../src/asf/common/services/gpio</Value>
+      <Value>../src/asf/common/services/ioport</Value>
+      <Value>../src/asf/common/utils</Value>
+      <Value>../src/asf/xmega/boards</Value>
+      <Value>../src/asf/xmega/boards/xmega_a3bu_xplained</Value>
+      <Value>../src/asf/xmega/utils</Value>
+      <Value>../src/asf/xmega/utils/preprocessor</Value>
+      <Value>../src/config</Value>
+      <Value>../src/asf/xmega/drivers/cpu</Value>
+      <Value>../src/asf/xmega/drivers/nvm</Value>
+      <Value>../src/asf/common/services/clock</Value>
+      <Value>../src/asf/thirdparty/qtouch/generic/avr8/qtouch/common</Value>
+      <Value>../src/asf/thirdparty/qtouch/generic/include</Value>
+    </ListValues>
+  </avrgcc.assembler.general.IncludePaths>
+</AvrGcc>
+    </ToolchainSettings>
+    <MemorySettings />
+    <GenerateHexFile>True</GenerateHexFile>
+    <GenerateMapFile>True</GenerateMapFile>
+    <GenerateListFile>True</GenerateListFile>
+    <GenerateEepFile>True</GenerateEepFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="src\asf\common\services\clock\pll.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\asf\common\services\clock\genclk.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\asf\common\services\clock\osc.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\asf\common\services\clock\xmega\pll.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\asf\common\services\clock\xmega\osc.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\asf\common\services\clock\sysclk.h">
+      <SubType>compile</SubType>
+    </None>
+    <Compile Include="src\asf\common\services\clock\xmega\sysclk.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <None Include="src\asf\common\services\clock\xmega\sysclk.h">
+      <SubType>compile</SubType>
+    </None>
+    <Compile Include="src\asf\common\services\ioport\xmega\ioport_compat.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\asf\thirdparty\qtouch\generic\avr8\qtouch\common\qt_asm_xmega.S">
+      <SubType>compile</SubType>
+    </Compile>
+    <None Include="src\asf\thirdparty\qtouch\generic\include\touch_api.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\asf\thirdparty\qtouch\generic\avr8\qtouch\common\touch_qt_config.h">
+      <SubType>compile</SubType>
+    </None>
+    <Compile Include="src\asf\xmega\boards\xmega_a3bu_xplained\init.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <None Include="src\asf\thirdparty\qtouch\generic\avr8\qtouch\lib\gcc\libavrxmega6g1-12qt-k-0rs.a">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\asf\thirdparty\qtouch\generic\avr8\qtouch\lib\gcc\libavrxmega6g1-12qt-k-3rs.a">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\asf\thirdparty\qtouch\generic\avr8\qtouch\lib\gcc\libavrxmega6g1-16qt-k-0rs.a">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\asf\thirdparty\qtouch\generic\avr8\qtouch\lib\gcc\libavrxmega6g1-16qt-k-4rs.a">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\asf\thirdparty\qtouch\generic\avr8\qtouch\lib\gcc\libavrxmega6g1-4qt-k-0rs.a">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\asf\thirdparty\qtouch\generic\avr8\qtouch\lib\gcc\libavrxmega6g1-4qt-k-1rs.a">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\asf\thirdparty\qtouch\generic\avr8\qtouch\lib\gcc\libavrxmega6g1-8qt-k-0rs.a">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\asf\thirdparty\qtouch\generic\avr8\qtouch\lib\gcc\libavrxmega6g1-8qt-k-2rs.a">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\asf\xmega\drivers\cpu\ccp.h">
+      <SubType>compile</SubType>
+    </None>
+    <Compile Include="src\asf\xmega\drivers\cpu\ccp.s">
+      <SubType>compile</SubType>
+    </Compile>
+    <None Include="src\asf\xmega\drivers\cpu\xmega_reset_cause.h">
+      <SubType>compile</SubType>
+    </None>
+    <Compile Include="src\asf\xmega\drivers\nvm\nvm.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <None Include="src\asf\xmega\drivers\nvm\nvm.h">
+      <SubType>compile</SubType>
+    </None>
+    <Compile Include="src\asf\xmega\drivers\nvm\nvm_asm.s">
+      <SubType>compile</SubType>
+    </Compile>
+    <None Include="src\config\conf_clock.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\config\touch_qt_config.h">
+      <SubType>compile</SubType>
+    </None>
+    <Compile Include="src\main.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <None Include="src\asf.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\asf\common\boards\board.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\asf\common\services\gpio\gpio.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\asf\common\services\gpio\xmega_gpio\xmega_gpio.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\asf\common\services\ioport\ioport.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\asf\common\services\ioport\xmega\ioport.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\asf\common\services\ioport\xmega\ioport_compat.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\asf\common\utils\interrupt.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\asf\common\utils\interrupt\interrupt_avr8.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\asf\common\utils\make\Makefile.avr.in">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\asf\common\utils\parts.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\asf\xmega\boards\xmega_a3bu_xplained\led.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\asf\xmega\boards\xmega_a3bu_xplained\xmega_a3bu_xplained.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\asf\xmega\utils\assembler.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\asf\xmega\utils\assembler\gas.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\asf\xmega\utils\bit_handling\clz_ctz.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\asf\xmega\utils\compiler.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\asf\xmega\utils\preprocessor\mrepeat.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\asf\xmega\utils\preprocessor\preprocessor.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\asf\xmega\utils\preprocessor\stringz.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\asf\xmega\utils\preprocessor\tpaste.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\asf\xmega\utils\progmem.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\asf\xmega\utils\status_codes.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\config\conf_board.h">
+      <SubType>compile</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\" />
+    <Folder Include="src\asf\" />
+    <Folder Include="src\asf\common\" />
+    <Folder Include="src\asf\common\boards\" />
+    <Folder Include="src\asf\common\services\" />
+    <Folder Include="src\asf\common\services\clock\" />
+    <Folder Include="src\asf\common\services\clock\xmega\" />
+    <Folder Include="src\asf\common\services\gpio\" />
+    <Folder Include="src\asf\common\services\gpio\xmega_gpio\" />
+    <Folder Include="src\asf\common\services\ioport\" />
+    <Folder Include="src\asf\common\services\ioport\xmega\" />
+    <Folder Include="src\asf\common\utils\" />
+    <Folder Include="src\asf\common\utils\interrupt\" />
+    <Folder Include="src\asf\common\utils\make\" />
+    <Folder Include="src\asf\thirdparty\" />
+    <Folder Include="src\asf\thirdparty\qtouch\" />
+    <Folder Include="src\asf\thirdparty\qtouch\generic\" />
+    <Folder Include="src\asf\thirdparty\qtouch\generic\avr8\" />
+    <Folder Include="src\asf\thirdparty\qtouch\generic\avr8\qtouch\" />
+    <Folder Include="src\asf\thirdparty\qtouch\generic\avr8\qtouch\common\" />
+    <Folder Include="src\asf\thirdparty\qtouch\generic\avr8\qtouch\lib\" />
+    <Folder Include="src\asf\thirdparty\qtouch\generic\avr8\qtouch\lib\gcc\" />
+    <Folder Include="src\asf\thirdparty\qtouch\generic\include\" />
+    <Folder Include="src\asf\xmega\" />
+    <Folder Include="src\asf\xmega\boards\" />
+    <Folder Include="src\asf\xmega\boards\xmega_a3bu_xplained\" />
+    <Folder Include="src\asf\xmega\drivers\" />
+    <Folder Include="src\asf\xmega\drivers\cpu\" />
+    <Folder Include="src\asf\xmega\drivers\nvm\" />
+    <Folder Include="src\asf\xmega\utils\" />
+    <Folder Include="src\asf\xmega\utils\assembler\" />
+    <Folder Include="src\asf\xmega\utils\bit_handling\" />
+    <Folder Include="src\asf\xmega\utils\preprocessor\" />
+    <Folder Include="src\config\" />
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\AvrGCC.targets" />
+</Project>
