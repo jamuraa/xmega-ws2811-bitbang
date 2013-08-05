@@ -71,11 +71,34 @@
 // From module: NVM - Non Volatile Memory
 #include <nvm.h>
 
+// From module: PMIC - Programmable Multi-level Interrupt Controller
+#include <pmic.h>
+
 // From module: Part identification macros
 #include <parts.h>
 
+// From module: Sleep Controller driver
+#include <sleep.h>
+
+// From module: Sleep manager - XMEGA A/AU/B/D implementation
+#include <sleepmgr.h>
+#include <xmega/sleepmgr.h>
+
 // From module: System Clock Control - XMEGA A1U/A3U/A3BU/A4U/B/C implementation
 #include <sysclk.h>
+
+// From module: USB CDC Protocol
+#include <usb_protocol_cdc.h>
+
+// From module: USB Device CDC (Single Interface Device)
+#include <udi_cdc.h>
+
+// From module: USB Device CDC Standard I/O (stdio) - AVR implementation
+#include <stdio_usb.h>
+
+// From module: USB Device Stack Core (Common API)
+#include <udc.h>
+#include <udd.h>
 
 // From module: XMEGA compiler driver
 #include <compiler.h>
